@@ -7566,8 +7566,8 @@ nav {
     height: 80px;
     background: #FFF;
     padding: 20px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px; }
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
     .contBox .topBar h2 {
       display: inline-block;
       color: #1B2631;
