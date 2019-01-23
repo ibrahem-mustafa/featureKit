@@ -7525,6 +7525,18 @@ nav {
     margin-top: 5px;
     font-size: 14px; }
 
+@media (max-width: 991px) {
+  nav ul.navbar-nav {
+    text-align: center; }
+    nav ul.navbar-nav li {
+      margin: auto !important;
+      margin-bottom: 20px; }
+      nav ul.navbar-nav li a {
+        text-align: center;
+        margin: auto !important; }
+    nav ul.navbar-nav .getStartBtn {
+      min-width: 40%;
+      margin: 20px auto !important; } }
 @media (max-width: 375px) {
   .navbar-brand {
     margin: 0 !important; } }
@@ -7583,10 +7595,10 @@ nav {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
-    -o-border-radius: 5px; }
-  .contBox .content.empty {
-    padding: 20px;
+    -o-border-radius: 5px;
     background: #E5E5E5; }
+  .contBox .content.empty {
+    padding: 20px; }
   .contBox .content.table {
     padding: 0;
     margin: 0; }
@@ -7717,15 +7729,7 @@ footer.fixed-footer {
         color: #20638f; }
 
 .contBox.addPro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: 0;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%); }
+  margin: 120px auto; }
   .contBox.addPro .content {
     padding: 60px 20px; }
     .contBox.addPro .content form .btn.custom {
@@ -7809,5 +7813,105 @@ footer.fixed-footer {
       -o-transition: all 0.2s ease-in-out; }
       .help .videoCont .video:hover {
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
+
+.contBox.newFeat {
+  margin-bottom: 100px; }
+  .contBox.newFeat .content {
+    padding: 60px 20px; }
+    .contBox.newFeat .content.typesBoxes {
+      padding: 40px; }
+      .contBox.newFeat .content.typesBoxes .boxCont {
+        position: relative;
+        margin-bottom: 20px; }
+        .contBox.newFeat .content.typesBoxes .boxCont label {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          position: relative; }
+        .contBox.newFeat .content.typesBoxes .boxCont input[type="radio"] {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          cursor: pointer;
+          z-index: 3; }
+          .contBox.newFeat .content.typesBoxes .boxCont input[type="radio"]:hover ~ .box {
+            background: #FFF;
+            color: #1B2631;
+            border: 1px solid #1B2631; }
+          .contBox.newFeat .content.typesBoxes .boxCont input[type="radio"]:checked ~ .box {
+            background: #FFF;
+            color: #1B2631;
+            border: 1px solid #1B2631; }
+        .contBox.newFeat .content.typesBoxes .boxCont .box {
+          position: relative;
+          height: 80px;
+          text-align: center;
+          background: #1B2631;
+          color: #FFF;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          font-size: 18px;
+          font-weight: 500;
+          transition: all 0.2s ease-in-out;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -ms-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out; }
+          .contBox.newFeat .content.typesBoxes .boxCont .box .icon,
+          .contBox.newFeat .content.typesBoxes .boxCont .box p {
+            display: inline-block;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%); }
+          .contBox.newFeat .content.typesBoxes .boxCont .box p {
+            font-size: 24px;
+            margin-bottom: 5px;
+            padding-left: 15px;
+            transform: translateY(-60%);
+            -webkit-transform: translateY(-60%);
+            -moz-transform: translateY(-60%);
+            -ms-transform: translateY(-60%);
+            -o-transform: translateY(-60%); }
+      .contBox.newFeat .content.typesBoxes .btn.custom {
+        margin-top: 20px;
+        min-width: 220px;
+        min-height: 50px;
+        font-size: 18px; }
+    .contBox.newFeat .content.fillData {
+      padding: 40px; }
+      .contBox.newFeat .content.fillData form > div {
+        margin: auto; }
+      .contBox.newFeat .content.fillData input, .contBox.newFeat .content.fillData select option {
+        text-align: center; }
+      .contBox.newFeat .content.fillData .btn.custom {
+        margin-top: 40px;
+        min-width: 220px;
+        min-height: 50px;
+        font-size: 18px; }
+
+@media (max-width: 767px) {
+  .contBox.newFeat .topBar {
+    text-align: center; }
+  .contBox.newFeat form input {
+    text-align: center; }
+  .contBox.newFeat form .btn.custom {
+    width: 80% !important;
+    margin: 20px auto !important; } }
+@media (max-width: 375px) {
+  .contBox.newFeat .content.typesBoxes {
+    padding: 20px; }
+  .contBox.newFeat .content.fillData {
+    padding: 20px; }
+  .contBox.newFeat .btn.custom {
+    min-width: 150px !important; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass ./public/style/sass/style.scss:./public/style/css/style.css -w",
+    "pug" : "pug ./pug -o ./ -w --pretty"
   },
   "keywords": [],
   "author": "",

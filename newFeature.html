@@ -35,55 +35,92 @@
     </nav>
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 contBox">
+        <div class="col-sm-12 contBox flip newFeat">
           <div class="topLabel left">Some dummy text</div>
           <div class="topLabel right">Some dummy text</div>
           <div class="col-sm-12 topBar">
-            <h2>Projects</h2><a class="btn custom" href="/addProject.html"> <i class="fas fa-plus"></i></a>
+            <h2>Select Type</h2>
           </div>
-          <div class="col-sm-12 content empty">
-            <p>Looks like you haven't set up any projects yet. <a href = "/addProject.html">Add a project</a> to get started.</p>
+          <div class="col-sm-12 content typesBoxes">
+            <form>
+              <div class="row">
+                <div class="col-sm-12 col-md-6 boxCont">
+                  <label>
+                    <input type="radio" name="type"/>
+                    <div class="box col-sm-12">
+                      <div class="icon"><i class="fab fa-wordpress-simple fa-2x"></i></div>
+                      <p>Wordpress</p>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-sm-12 col-md-6 boxCont">
+                  <label>
+                    <input type="radio" name="type"/>
+                    <div class="box col-sm-12">
+                      <div class="icon"><i class="fab fa-wordpress-simple fa-2x"></i></div>
+                      <p>Wordpress</p>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-sm-12 col-md-6 boxCont">
+                  <label>
+                    <input type="radio" name="type"/>
+                    <div class="box col-sm-12">
+                      <div class="icon"><i class="fab fa-wordpress-simple fa-2x"></i></div>
+                      <p>Wordpress</p>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-sm-12 col-md-6 boxCont">
+                  <label>
+                    <input type="radio" name="type"/>
+                    <div class="box col-sm-12">
+                      <div class="icon"><i class="fab fa-wordpress-simple fa-2x"></i></div>
+                      <p>Wordpress</p>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-sm-12">
+                  <input class="btn custom" type="submit" value="Next"/>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
         <div class="gabSpace col-sm-12"></div>
-        <div class="col-sm-12 contBox">
+        <div class="col-sm-12 contBox flip newFeat">
           <div class="topLabel left">Some dummy text</div>
           <div class="topLabel right">Some dummy text</div>
           <div class="col-sm-12 topBar">
-            <h2>Projects</h2><a class="btn custom" href="/addProject.html"> <i class="fas fa-plus"></i></a>
+            <h2>Fill Project Details </h2>
           </div>
-          <div class="col-sm-12 content table">
-            <div class="th col-sm-12">
-              <div class="row">
-                <div class="tc col-sm-4">Name</div>
-                <div class="tc col-sm-4">Status</div>
-                <div class="tc col-sm-4">Actions</div>
+          <div class="col-sm-12 content fillData">
+            <form>
+              <div class="col-md-6 mb-3">
+                <input class="form-control is-valid" type="text" placeholder="Name" ="" required=""/>
+                <div class="valid-feedback">Looks good!</div>
               </div>
-            </div>
-            <div class="tr col-sm-12">
-              <div class="row">
-                <div class="tc col-sm-4">Project 1</div>
-                <div class="tc col-sm-4">Active</div>
-                <div class="tc col-sm-4">Stop</div>
+              <div class="col-md-6 mb-3">
+                <input class="form-control is-invalid" type="text" placeholder="City" required=""/>
+                <div class="invalid-feedback">Please provide a valid city.</div>
               </div>
-            </div>
-            <div class="tr col-sm-12">
-              <div class="row">
-                <div class="tc col-sm-4">Project 2</div>
-                <div class="tc col-sm-4">Stopped</div>
-                <div class="tc col-sm-4">Activate</div>
+              <div class="col-md-6 mb-3">
+                <input class="form-control" type="Number" placeholder="Count" required=""/><small class="form-text text-muted" id="passwordHelpBlock">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</small>
               </div>
-            </div>
-            <div class="tr col-sm-12">
-              <div class="row">
-                <div class="tc col-sm-4">Project 3</div>
-                <div class="tc col-sm-4">Active</div>
-                <div class="tc col-sm-4">Stop</div>
+              <div class="col-md-6">
+                <select class="custom-select" id="inlineFormCustomSelect">
+                  <option selected="">Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
               </div>
-            </div>
+              <div class="col-sm-12">
+                <input class="btn custom" type="submit" value="Next"/>
+              </div>
+            </form>
           </div>
         </div>
-        <div class="gabSpace col-sm-12"></div>
       </div>
     </div>
     <footer class="col-sm-12">
