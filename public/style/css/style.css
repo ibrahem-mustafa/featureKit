@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -7482,7 +7483,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'Maven Pro', sans-serif; }
 
 .gabSpace {
-  height: 200px; }
+  height: 100px; }
 
 p {
   margin: 0; }
@@ -7490,8 +7491,20 @@ p {
 button {
   cursor: pointer; }
 
+body {
+  min-height: 100vh; }
+
 nav {
   background-color: #2C3E50; }
+  nav li.nav-item.dropdown .dropdown-menu {
+    padding: 0;
+    margin-bottom: 15px; }
+    nav li.nav-item.dropdown .dropdown-menu a {
+      padding: 0.6rem; }
+      nav li.nav-item.dropdown .dropdown-menu a:hover {
+        background: #E5E5E5; }
+    nav li.nav-item.dropdown .dropdown-menu .dropdown-divider {
+      margin: auto; }
   nav .navbar-brand {
     margin-right: 45px; }
     nav .navbar-brand img {
@@ -7569,9 +7582,9 @@ nav {
     color: rgba(82, 82, 82, 0.7);
     font-weight: 500; }
   .contBox .topLabel.left {
-    left: 10px; }
+    left: -20px; }
   .contBox .topLabel.right {
-    right: 10px; }
+    right: -20px; }
   .contBox .topBar {
     position: relative;
     width: 100%;
@@ -7591,33 +7604,38 @@ nav {
       color: #FFF;
       font-size: 1.2rem; }
   .contBox .content {
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    background: #E5E5E5; }
+    background: #E5E5E5;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
   .contBox .content.empty {
     padding: 20px; }
+  .contBox .tableCont {
+    overflow-x: auto; }
   .contBox .content.table {
     padding: 0;
+    display: table;
     margin: 0; }
     .contBox .content.table .th {
       height: 70px;
       background: #1B2631;
       color: #FFF;
       text-align: center;
-      line-height: 70px; }
+      line-height: 70px;
+      display: table-row; }
       .contBox .content.table .th .tc {
+        display: table-cell;
         font-size: 24px;
-        height: 100%; }
+        height: 100%;
+        min-width: 150px; }
     .contBox .content.table .tr {
+      display: table-row;
       cursor: pointer;
       height: 60px;
       background: #FFF;
       color: #1B2631;
       text-align: center;
       line-height: 60px;
+      min-width: 150px;
       transition: all 0.2s ease-in-out;
       -webkit-transition: all 0.2s ease-in-out;
       -moz-transition: all 0.2s ease-in-out;
@@ -7625,7 +7643,9 @@ nav {
       -o-transition: all 0.2s ease-in-out; }
       .contBox .content.table .tr .tc {
         font-size: 16px;
-        height: 100%; }
+        height: 100%;
+        min-width: 150px;
+        display: table-cell; }
       .contBox .content.table .tr:last-of-type {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px; }
@@ -7707,6 +7727,9 @@ footer {
     margin: 0 10px;
     color: #FFF;
     font-weight: 400; }
+    footer a:hover {
+      text-decoration: none;
+      color: #E5E5E5; }
 
 footer.fixed-footer {
   position: absolute;
@@ -7729,7 +7752,7 @@ footer.fixed-footer {
         color: #20638f; }
 
 .contBox.addPro {
-  margin: 120px auto; }
+  margin-top: auto; }
   .contBox.addPro .content {
     padding: 60px 20px; }
     .contBox.addPro .content form .btn.custom {
@@ -7751,7 +7774,9 @@ footer.fixed-footer {
     margin-top: 40px;
     margin-bottom: 80px; }
     .faq .faqContent .card {
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); }
+      position: relative;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px; }
       .faq .faqContent .card .card-header {
         background: #FFF;
         transition: all 0.2s ease-in-out;
@@ -7760,6 +7785,7 @@ footer.fixed-footer {
         -ms-transition: all 0.2s ease-in-out;
         -o-transition: all 0.2s ease-in-out; }
         .faq .faqContent .card .card-header .btn {
+          position: relative;
           text-decoration: none;
           width: 100%;
           text-align: left;
@@ -7768,6 +7794,17 @@ footer.fixed-footer {
           color: #1B2631; }
           .faq .faqContent .card .card-header .btn:hover {
             text-decoration: none; }
+          .faq .faqContent .card .card-header .btn::after {
+            display: block;
+            position: absolute;
+            font-family: "Font Awesome 5 Free";
+            content: '\f078';
+            font-weight: 900;
+            right: 0px;
+            top: 7px;
+            font-size: 1.2rem; }
+          .faq .faqContent .card .card-header .btn:not(.collapsed)::after {
+            content: ""; }
         .faq .faqContent .card .card-header:hover {
           background: #fafafa; }
       .faq .faqContent .card .card-body {
@@ -7814,89 +7851,89 @@ footer.fixed-footer {
       .help .videoCont .video:hover {
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); }
 
-.contBox.newFeat {
+.contBox.newFeat:last-of-type {
   margin-bottom: 100px; }
-  .contBox.newFeat .content {
-    padding: 60px 20px; }
-    .contBox.newFeat .content.typesBoxes {
-      padding: 40px; }
-      .contBox.newFeat .content.typesBoxes .boxCont {
+.contBox.newFeat .content {
+  padding: 60px 20px; }
+  .contBox.newFeat .content.typesBoxes {
+    padding: 40px; }
+    .contBox.newFeat .content.typesBoxes .boxCont {
+      position: relative;
+      margin-bottom: 20px; }
+      .contBox.newFeat .content.typesBoxes .boxCont label {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: relative; }
+      .contBox.newFeat .content.typesBoxes .boxCont input[type="radio"] {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 3; }
+        .contBox.newFeat .content.typesBoxes .boxCont input[type="radio"]:hover ~ .box {
+          background: #FFF;
+          color: #1B2631;
+          border: 1px solid #1B2631; }
+        .contBox.newFeat .content.typesBoxes .boxCont input[type="radio"]:checked ~ .box {
+          background: #FFF;
+          color: #1B2631;
+          border: 1px solid #1B2631; }
+      .contBox.newFeat .content.typesBoxes .boxCont .box {
         position: relative;
-        margin-bottom: 20px; }
-        .contBox.newFeat .content.typesBoxes .boxCont label {
-          width: 100%;
-          height: 100%;
-          margin: 0;
-          position: relative; }
-        .contBox.newFeat .content.typesBoxes .boxCont input[type="radio"] {
-          display: block;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          opacity: 0;
-          cursor: pointer;
-          z-index: 3; }
-          .contBox.newFeat .content.typesBoxes .boxCont input[type="radio"]:hover ~ .box {
-            background: #FFF;
-            color: #1B2631;
-            border: 1px solid #1B2631; }
-          .contBox.newFeat .content.typesBoxes .boxCont input[type="radio"]:checked ~ .box {
-            background: #FFF;
-            color: #1B2631;
-            border: 1px solid #1B2631; }
-        .contBox.newFeat .content.typesBoxes .boxCont .box {
+        height: 80px;
+        text-align: center;
+        background: #1B2631;
+        color: #FFF;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        font-size: 18px;
+        font-weight: 500;
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out; }
+        .contBox.newFeat .content.typesBoxes .boxCont .box .icon,
+        .contBox.newFeat .content.typesBoxes .boxCont .box p {
+          display: inline-block;
           position: relative;
-          height: 80px;
-          text-align: center;
-          background: #1B2631;
-          color: #FFF;
-          border-radius: 5px;
-          -webkit-border-radius: 5px;
-          -moz-border-radius: 5px;
-          -ms-border-radius: 5px;
-          -o-border-radius: 5px;
-          font-size: 18px;
-          font-weight: 500;
-          transition: all 0.2s ease-in-out;
-          -webkit-transition: all 0.2s ease-in-out;
-          -moz-transition: all 0.2s ease-in-out;
-          -ms-transition: all 0.2s ease-in-out;
-          -o-transition: all 0.2s ease-in-out; }
-          .contBox.newFeat .content.typesBoxes .boxCont .box .icon,
-          .contBox.newFeat .content.typesBoxes .boxCont .box p {
-            display: inline-block;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            -o-transform: translateY(-50%); }
-          .contBox.newFeat .content.typesBoxes .boxCont .box p {
-            font-size: 24px;
-            margin-bottom: 5px;
-            padding-left: 15px;
-            transform: translateY(-60%);
-            -webkit-transform: translateY(-60%);
-            -moz-transform: translateY(-60%);
-            -ms-transform: translateY(-60%);
-            -o-transform: translateY(-60%); }
-      .contBox.newFeat .content.typesBoxes .btn.custom {
-        margin-top: 20px;
-        min-width: 220px;
-        min-height: 50px;
-        font-size: 18px; }
-    .contBox.newFeat .content.fillData {
-      padding: 40px; }
-      .contBox.newFeat .content.fillData form > div {
-        margin: auto; }
-      .contBox.newFeat .content.fillData input, .contBox.newFeat .content.fillData select option {
-        text-align: center; }
-      .contBox.newFeat .content.fillData .btn.custom {
-        margin-top: 40px;
-        min-width: 220px;
-        min-height: 50px;
-        font-size: 18px; }
+          top: 50%;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%); }
+        .contBox.newFeat .content.typesBoxes .boxCont .box p {
+          font-size: 24px;
+          margin-bottom: 5px;
+          padding-left: 15px;
+          transform: translateY(-60%);
+          -webkit-transform: translateY(-60%);
+          -moz-transform: translateY(-60%);
+          -ms-transform: translateY(-60%);
+          -o-transform: translateY(-60%); }
+    .contBox.newFeat .content.typesBoxes .btn.custom {
+      margin-top: 20px;
+      min-width: 220px;
+      min-height: 50px;
+      font-size: 18px; }
+  .contBox.newFeat .content.fillData {
+    padding: 40px; }
+    .contBox.newFeat .content.fillData form > div {
+      margin: auto; }
+    .contBox.newFeat .content.fillData input, .contBox.newFeat .content.fillData select option {
+      text-align: center; }
+    .contBox.newFeat .content.fillData .btn.custom {
+      margin-top: 40px;
+      min-width: 220px;
+      min-height: 50px;
+      font-size: 18px; }
 
 @media (max-width: 767px) {
   .contBox.newFeat .topBar {
