@@ -7644,6 +7644,8 @@ nav {
       -moz-transition: all 0.2s ease-in-out;
       -ms-transition: all 0.2s ease-in-out;
       -o-transition: all 0.2s ease-in-out; }
+      .contBox .content.table .tr:nth-child(odd) {
+        background: #E5E5E5; }
       .contBox .content.table .tr .tc {
         font-size: 16px;
         height: 100%;
@@ -7695,9 +7697,9 @@ select.custom-select {
   left: 0;
   width: 16px;
   height: 16px;
-  border: 2px solid #aaa;
+  border: 2px solid #2C3E50;
   transition: .3s;
-  background: transperent;
+  background: #FFF;
   background-size: 0%;
   background-position: center;
   background-repeat: no-repeat;
@@ -8017,6 +8019,16 @@ footer.fixed-footer {
       min-width: 220px;
       min-height: 50px;
       font-size: 18px; }
+    .contBox.newFeat .content.typesBoxes [type="submit"] {
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      border: 1px solid #2C3E50; }
+      .contBox.newFeat .content.typesBoxes [type="submit"]:hover {
+        background: #FFF;
+        color: #2C3E50; }
   .contBox.newFeat .content.fillData {
     padding: 40px; }
     .contBox.newFeat .content.fillData form > div {
