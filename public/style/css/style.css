@@ -7495,7 +7495,8 @@ button {
   cursor: pointer; }
 
 body {
-  min-height: 100vh; }
+  min-height: 100vh;
+  background: #E5E5E5; }
 
 nav {
   background-color: #2C3E50; }
@@ -7595,7 +7596,8 @@ nav {
     background: #FFF;
     padding: 20px;
     border-top-left-radius: 5px;
-    border-top-right-radius: 5px; }
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #E5E5E5; }
     .contBox .topBar h2 {
       display: inline-block;
       color: #1B2631;
@@ -7607,7 +7609,7 @@ nav {
       color: #FFF;
       font-size: 1.2rem; }
   .contBox .content {
-    background: #E5E5E5;
+    background: #FFF;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px; }
   .contBox .content.empty {
