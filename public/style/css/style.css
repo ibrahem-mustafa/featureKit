@@ -7937,6 +7937,16 @@ footer.fixed-footer {
   margin-bottom: 100px; }
 .contBox.newFeat .content {
   padding: 60px 20px; }
+  .contBox.newFeat .content [type="submit"] {
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    border: 1px solid #2C3E50; }
+    .contBox.newFeat .content [type="submit"]:hover {
+      background: #FFF;
+      color: #2C3E50; }
   .contBox.newFeat .content.typesBoxes {
     padding: 40px; }
     .contBox.newFeat .content.typesBoxes .boxCont {
@@ -8019,16 +8029,6 @@ footer.fixed-footer {
       min-width: 220px;
       min-height: 50px;
       font-size: 18px; }
-    .contBox.newFeat .content.typesBoxes [type="submit"] {
-      transition: all 0.2s ease-in-out;
-      -webkit-transition: all 0.2s ease-in-out;
-      -moz-transition: all 0.2s ease-in-out;
-      -ms-transition: all 0.2s ease-in-out;
-      -o-transition: all 0.2s ease-in-out;
-      border: 1px solid #2C3E50; }
-      .contBox.newFeat .content.typesBoxes [type="submit"]:hover {
-        background: #FFF;
-        color: #2C3E50; }
   .contBox.newFeat .content.fillData {
     padding: 40px; }
     .contBox.newFeat .content.fillData form > div {
