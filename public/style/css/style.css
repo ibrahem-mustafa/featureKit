@@ -7540,7 +7540,15 @@ nav {
     color: #2C3E50 !important;
     padding: 5px;
     margin-top: 5px;
-    font-size: 14px; }
+    font-size: 14px;
+    border: 1px solid #00FFC2;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out; }
+    nav .getStartBtn a.btn.custom:hover {
+      background: #89ffe3 !important; }
 
 @media (max-width: 991px) {
   nav ul.navbar-nav {
@@ -7615,19 +7623,22 @@ nav {
   .contBox .content.empty {
     padding: 20px; }
   .contBox .tableCont {
-    overflow-x: auto; }
+    overflow-x: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
   .contBox .content.table {
     padding: 0;
     display: table;
     margin: 0; }
     .contBox .content.table .th {
-      height: 70px;
-      background: #1B2631;
+      height: 65px;
+      background: #525252;
       color: #FFF;
       text-align: center;
-      line-height: 70px;
+      line-height: 65px;
       display: table-row; }
       .contBox .content.table .th .tc {
+        padding: 0 20px;
         display: table-cell;
         font-size: 20px;
         height: 100%;
@@ -7649,6 +7660,7 @@ nav {
       .contBox .content.table .tr:nth-child(odd) {
         background: #E5E5E5; }
       .contBox .content.table .tr .tc {
+        padding: 0 20px;
         font-size: 16px;
         height: 100%;
         min-width: 150px;
@@ -7780,7 +7792,7 @@ select.custom-select {
     bottom: -10px;
     left: 0;
     width: 85%;
-    background: #00FFC2; }
+    background: #0081C6; }
 
 .paragraph {
   margin: 20px auto; }
