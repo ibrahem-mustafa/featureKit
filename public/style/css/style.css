@@ -7536,19 +7536,19 @@ nav {
       content: '';
       display: none; }
   nav .getStartBtn a.btn.custom {
-    background: #00FFC2 !important;
-    color: #2C3E50 !important;
+    background: #0081C6 !important;
+    color: #FFF !important;
     padding: 5px;
     margin-top: 5px;
     font-size: 14px;
-    border: 1px solid #00FFC2;
+    border: 1px solid #0081C6;
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out; }
     nav .getStartBtn a.btn.custom:hover {
-      background: #89ffe3 !important; }
+      background: #5ba7cf !important; }
 
 @media (max-width: 991px) {
   nav ul.navbar-nav {
@@ -7669,7 +7669,7 @@ nav {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px; }
       .contBox .content.table .tr:hover {
-        background: #2C3E50;
+        background: #0081C6;
         color: #FFF; }
 
 .contBox.flip .topBar {
