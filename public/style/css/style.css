@@ -7512,7 +7512,7 @@ nav {
   nav .navbar-brand {
     margin-right: 45px; }
     nav .navbar-brand img {
-      width: 12rem; }
+      width: 10rem; }
   nav .nav-item {
     margin-right: 20px; }
     nav .nav-item .nav-link {
@@ -7919,7 +7919,7 @@ footer.fixed-footer {
   .card * {
     text-align: center !important; } }
 .help {
-  margin-top: 100px;
+  margin-top: 60px;
   position: relative; }
   .help .helpContent {
     padding: 0; }
